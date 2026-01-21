@@ -160,12 +160,6 @@ const GridDistortion = ({
       vY: 0,
     };
 
-    const scrollState = {
-      y: window.scrollY,
-      prevY: window.scrollY,
-      vY: 0,
-    };
-
     const handleMouseMove = (e) => {
       const rect = container.getBoundingClientRect();
       const x = (e.clientX - rect.left) / rect.width;
@@ -189,16 +183,8 @@ const GridDistortion = ({
       });
     };
 
-    const handleScroll = () => {
-      const currentY = window.scrollY;
-      scrollState.vY = (currentY - scrollState.prevY) * 0.005; // Adjust sensitivity
-      scrollState.prevY = currentY;
-      scrollState.y = currentY;
-    };
-
     container.addEventListener("mousemove", handleMouseMove);
     container.addEventListener("mouseleave", handleMouseLeave);
-    window.addEventListener("scroll", handleScroll);
 
     handleResize();
 
@@ -219,9 +205,6 @@ const GridDistortion = ({
       const gridMouseY = size * mouseState.y;
       const maxDist = size * mouse;
 
-      // Decay scroll velocity
-      scrollState.vY *= 0.9;
-
       for (let i = 0; i < size; i++) {
         for (let j = 0; j < size; j++) {
           const distSq =
@@ -232,11 +215,6 @@ const GridDistortion = ({
             data[index] += strength * 100 * mouseState.vX * power;
             data[index + 1] -= strength * 100 * mouseState.vY * power;
           }
-
-          // Apply scroll distortion globally or based on y-position
-          const index = 4 * (i + size * j);
-          // Simple vertical wave based on scroll velocity
-          data[index + 1] -= strength * 500 * scrollState.vY;
         }
       }
 
@@ -259,7 +237,6 @@ const GridDistortion = ({
 
       container.removeEventListener("mousemove", handleMouseMove);
       container.removeEventListener("mouseleave", handleMouseLeave);
-      window.removeEventListener("scroll", handleScroll);
 
       if (renderer) {
         renderer.dispose();

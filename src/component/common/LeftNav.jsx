@@ -3,7 +3,7 @@ import TextType from "../shadcn/TextType";
 
 const LeftNav = () => {
   return (
-    <div className="text-2xl font-bold">
+    <div className="text-2xl font-bold text-white">
       <TextType
         text={["NASIRA JAHAN", "UI/UX DESIGNER"]}
         typingSpeed={75}

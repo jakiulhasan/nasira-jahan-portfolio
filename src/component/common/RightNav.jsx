@@ -3,7 +3,7 @@ import Button from "../styled-component/Button";
 
 const RightNav = () => {
   return (
-    <div className="flex gap-5 justify-center items-center">
+    <div className="flex gap-5 justify-center items-center text-white">
       <ul className="flex gap-5">
         <li>Home</li>
         <li>About</li>

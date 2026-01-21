@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../styled-component/Button";
+import Button from "../ui/styled-component/Button";
 
 const RightNav = () => {
   return (

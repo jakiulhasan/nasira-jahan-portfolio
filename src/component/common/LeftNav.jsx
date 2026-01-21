@@ -1,5 +1,5 @@
 import React from "react";
-import TextType from "../shadcn/TextType";
+import TextType from "../ui/shadcn/TextType";
 
 const LeftNav = () => {
   return (
@@ -10,10 +10,7 @@ const LeftNav = () => {
         pauseDuration={1500}
         showCursor
         cursorCharacter="_"
-        texts={[
-          "Welcome to React Bits! Good to see you!",
-          "Build some amazing experiences!",
-        ]}
+        texts={[""]}
         deletingSpeed={50}
         variableSpeedEnabled={false}
         variableSpeedMin={60}

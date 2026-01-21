@@ -1,14 +1,14 @@
 import React from "react";
 import Navbar from "./component/layout/Navbar";
 import Background from "./component/layout/Background";
+import Banner from "./component/layout/Banner";
 
 const App = () => {
   return (
     <>
       <Background></Background>
-      <div className="relative">
-        <Navbar></Navbar>
-      </div>
+      <Navbar></Navbar>
+      <Banner></Banner>
     </>
   );
 };

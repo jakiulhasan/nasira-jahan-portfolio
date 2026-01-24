@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "lottie-react";
-import designerAnimation from "../../assets/Designer.json";
+import gif from "../../assets/midle.gif";
 
 const About = () => {
   return (
@@ -40,8 +40,8 @@ const About = () => {
           </div>
 
           <div className="md:w-1/3 flex items-center justify-center p-4">
-            <div className="w-full max-w-[300px]">
-              <Lottie animationData={designerAnimation} loop autoplay />
+            <div className="w-full ">
+              <img src={gif} alt="gif" className="mix-blend-screen h-full" />
             </div>
           </div>
 

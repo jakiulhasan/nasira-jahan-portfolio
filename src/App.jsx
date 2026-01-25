@@ -3,7 +3,7 @@ import Navbar from "./component/layout/Navbar";
 import Background from "./component/layout/Background";
 import Banner from "./component/layout/Banner";
 import About from "./component/layout/About";
-import Card from "./component/ui/styled-component/Card";
+import Project from "./component/layout/Project";
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
       <Navbar></Navbar>
       <Banner></Banner>
       <About></About>
-      <Card></Card>
+      <Project></Project>
     </>
   );
 };

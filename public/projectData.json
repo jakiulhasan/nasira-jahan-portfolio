@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Civil Engineer Portfolio Design",
+    "img": "https://i.ibb.co/pr3W0VJz/Rectangle-161125306-1.png",
+    "description": "Designing a professional landing page to clearly present engineering services",
+    "tags": ["UI Designer", "Figma", "Web"],
+    "buttonText": "View Projects",
+    "link": "#"
+  },
+  {
+    "id": 2,
+    "title": "Dental landing page design",
+    "img": "https://i.ibb.co/q3GnjnQ3/Rectangle-161125306-2.png",
+    "description": "Designing a clean landing page to increase product focus and conversion",
+    "tags": ["UI Designer", "Figma", "Web"],
+    "buttonText": "View Projects",
+    "link": "#"
+  },
+  {
+    "id": 3,
+    "title": "Healthcare landing page design",
+    "img": "https://i.ibb.co/TDLdD7Xc/Rectangle-161125306-3.png",
+    "description": "Designing a clean healthcare landing page to improve trust, clarity, and patient engagement",
+    "tags": ["UI Designer", "Figma", "Web"],
+    "buttonText": "View Projects",
+    "link": "#"
+  }
+]

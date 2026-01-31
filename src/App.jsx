@@ -5,6 +5,8 @@ import Banner from "./component/layout/Banner";
 import About from "./component/layout/About";
 import Project from "./component/layout/Project";
 
+import WorkflowProcess from "./component/layout/WorkflowProcess";
+
 const App = () => {
   return (
     <>
@@ -13,6 +15,7 @@ const App = () => {
       <Banner></Banner>
       <About></About>
       <Project></Project>
+      <WorkflowProcess></WorkflowProcess>
     </>
   );
 };

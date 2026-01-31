@@ -10,10 +10,14 @@ const ProjectCard = ({ project }) => {
       <div className="glow-container" />
 
       <InnerContent>
-        <Image src={img} alt={title} />
         <Content>
+          <Image
+            src={img}
+            alt={title}
+            className="object-cover object-top rounded-md mb-2 shadow-sm"
+          />
           <Title>{title}</Title>
-          <Description>{description}</Description>
+          <Description className="line-clamp-2 h-14">{description}</Description>
 
           {tags && (
             <Tags>

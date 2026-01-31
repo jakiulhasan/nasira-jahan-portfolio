@@ -39,7 +39,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="md:w-1/3 flex items-center justify-center p-4">
+          <div className="md:w-1/3 flex items-center justify-center">
             <div className="w-full ">
               <img src={gif} alt="gif" className="mix-blend-screen h-full" />
             </div>
